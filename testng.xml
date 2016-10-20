@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testgfan">
+	<test name="testLogin">
+		<classes>
+			<class name="com.gfan.test.TestLogin" />
+		</classes>
+	</test>
+	<test name="testToplinks">
+		<classes>
+			<class name="com.gfan.test.TestTopMenu" />
+		</classes>
+	</test>
+	<test name="testSearch">
+		<classe>
+			<class name="com.gfan.test.TestSearch" />
+		</classe>
+	</test>
+</suite>
