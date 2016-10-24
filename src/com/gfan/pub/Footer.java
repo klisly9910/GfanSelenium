@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -24,7 +26,7 @@ public class Footer {
 	static WebDriver driver;
 	String url = "http://phone.gfan.com/";
 
-	@BeforeMethod
+	@BeforeClass
 	public void setUp() {
 		driver = new FirefoxDriver();
 		Driver.getDriver("firefox");
@@ -99,9 +101,9 @@ public class Footer {
 		System.out.println("==========================");
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void close() {
-		driver.close();
+		driver.quit();
 	}
 
 }

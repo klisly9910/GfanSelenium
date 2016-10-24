@@ -53,7 +53,7 @@ public class NavigatorTest {
 												// 元素一致
 				continue;
 			WebDriver window = driver.switchTo().window(handle);
-			Assert.assertEquals(window.getTitle(), "机峰网");
+			Assert.assertEquals(window.getTitle(), "机锋网");
 			System.out.println(" phone title,url = " + window.getTitle() + ","
 					+ window.getCurrentUrl());
 
@@ -83,7 +83,7 @@ public class NavigatorTest {
 												// 元素一致
 				continue;
 			WebDriver window = driver.switchTo().window(handle);
-			Assert.assertEquals(window.getTitle(), "手机 - 机峰网");
+			Assert.assertEquals(window.getTitle(), "手机 - 机锋网");
 			System.out.println(" phone title,url = " + window.getTitle() + ","
 					+ window.getCurrentUrl());
 
@@ -112,7 +112,7 @@ public class NavigatorTest {
 			if (currentWindow.equals(handle))
 				continue;
 			WebDriver window = driver.switchTo().window(handle);
-			Assert.assertEquals(window.getTitle(), "电脑 - 机峰网");
+			Assert.assertEquals(window.getTitle(), "电脑 - 机锋网");
 			System.out.println("computer title,url = " + window.getTitle()
 					+ "," + window.getCurrentUrl());
 		}
@@ -137,7 +137,7 @@ public class NavigatorTest {
 				continue;
 			}
 			WebDriver window = driver.switchTo().window(handle);
-			Assert.assertEquals(window.getTitle(), "智能 - 机峰网");
+			Assert.assertEquals(window.getTitle(), "智能 - 机锋网");
 			System.out.println("smart title,url = " + window.getTitle() + ","
 					+ window.getCurrentUrl());
 
@@ -163,7 +163,7 @@ public class NavigatorTest {
 				continue;
 			}
 			WebDriver window = driver.switchTo().window(handle);
-			Assert.assertEquals(window.getTitle(), "新媒体 - 机峰网");
+			Assert.assertEquals(window.getTitle(), "新媒体 - 机锋网");
 			System.out.println("weMedia title,url = " + window.getTitle() + ","
 					+ window.getCurrentUrl());
 
@@ -189,7 +189,7 @@ public class NavigatorTest {
 				continue;
 			}
 			WebDriver window = driver.switchTo().window(handle);
-			Assert.assertEquals(window.getTitle(), "家电 - 机峰网");
+			Assert.assertEquals(window.getTitle(), "家电 - 机锋网");
 			System.out.println("jiadian title,url = " + window.getTitle() + ","
 					+ window.getCurrentUrl());
 
@@ -215,7 +215,7 @@ public class NavigatorTest {
 				continue;
 			}
 			WebDriver window = driver.switchTo().window(handle);
-			Assert.assertEquals(window.getTitle(), "办公 - 机峰网");
+			Assert.assertEquals(window.getTitle(), "办公 - 机锋网");
 			System.out.println("office title,url = " + window.getTitle() + ","
 					+ window.getCurrentUrl());
 
@@ -241,7 +241,7 @@ public class NavigatorTest {
 				continue;
 			}
 			WebDriver window = driver.switchTo().window(handle);
-			Assert.assertEquals(window.getTitle(), "机锋论坛 - 机峰网");
+			Assert.assertEquals(window.getTitle(), "机锋论坛 - 机锋网");
 			System.out.println("BBS title,url = " + window.getTitle() + ","
 					+ window.getCurrentUrl());
 

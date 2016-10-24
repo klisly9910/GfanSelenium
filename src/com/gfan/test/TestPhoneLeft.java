@@ -8,18 +8,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.driver.Driver;
 
+/**
+ * phone channel left top box size
+ * @author xiaohua
+ *
+ */
 public class TestPhoneLeft {
 
 	static WebDriver driver;
 	String url = "http://phone.gfan.com/";
 
-	@BeforeMethod
+	@BeforeClass
 	public void setUp() {
 		driver = new FirefoxDriver();
 		Driver.getDriver("firefox");
@@ -45,12 +52,12 @@ public class TestPhoneLeft {
 				// System.out.println("第" + j + "个box");
 				Assert.assertEquals(iphone01_box.size(), 3);
 			}
-			System.out.println("一共有" + iphone01_box.size() + "个box");
+			System.out.println("一共有" + iphone01_box.size() + "个模块");
 		}
 
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void close() {
 		driver.close();
 	}
