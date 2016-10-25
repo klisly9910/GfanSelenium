@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="testgfan">
-	<test name="testLogin">
+	<test name="testLogin" preserve-order="true">
 		<classes>
-			<class name="com.gfan.test.TestLogin" />
+			<class name="com.gfan.test.NavigatorTest" />
+			<methods>
+				<include name="clickLogo" />
+				<include name="clickPhone" />
+				<include name="clickComputer" />
+				<include name="clickSmart" />
+				<include name="clickWemedia" />
+				<include name="clickJiaDian" />
+				<include name="clickOffice" />
+				<include name="clickBBS" />
+			</methods>
 		</classes>
-	</test>
-	<test name="testToplinks">
-		<classes>
-			<class name="com.gfan.test.TestTopMenu" />
-		</classes>
-	</test>
-	<test name="testSearch">
-		<classe>
-			<class name="com.gfan.test.TestSearch" />
-		</classe>
+
 	</test>
 </suite>
